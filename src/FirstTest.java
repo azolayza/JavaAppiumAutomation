@@ -4,7 +4,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.net.URL;
 
 public class FirstTest {
@@ -20,9 +19,7 @@ public class FirstTest {
         capabilities.setCapability("appActivity",".main.MainActivity");
         capabilities.setCapability("app","/Users/liza/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
-        driver = new AndroidDriver(new URL("http:127.0.0.1:4723/wd/hub"), capabilities);
-
-    }
+        driver = new AndroidDriver(new URL("http:127.0.0.1:4723/wd/hub"), capabilities);}
 
     @After
     public void tearDown()
